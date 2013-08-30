@@ -16,7 +16,7 @@ public class Datum {
 	
 	public String toString() {
 		
-		return new String(tag + "." + monat + "." + jahr);
+		return tag + "." + monat + "." + jahr;
 		
 	}
 }
