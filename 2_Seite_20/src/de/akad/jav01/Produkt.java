@@ -26,7 +26,7 @@ public class Produkt {
 	
 	public String toString() {
 		
-		return new String(beschreibung + " kostet " + Produktpreis.get(this.preis));
+		return beschreibung + " kostet " + Produktpreis.get(this.preis);
 	
 	}
 	

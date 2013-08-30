@@ -14,7 +14,7 @@ public class Produktbeschreibung {
 	
 	public String toString() {
 		
-		return new String(this.gruppe + " -> " + this.beschreibung);
+		return this.gruppe + " -> " + this.beschreibung;
 	}
 	
 }
