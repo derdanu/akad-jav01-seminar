@@ -68,7 +68,10 @@ public class Main {
 		System.out.println("Summe von " + erg[0] + " " + erg[1] + " " + erg[2] + " lautet: " + sum);
 			
 
-		// Aufgabe 5 offen
+		System.out.println("--> Aufgabe 5");
+		Namen namen = new Namen();
+		int [] blub = {0, 1 , 3}; // Mapped A B C 
+		namen.zeichenAusgeben(blub);
 		
 		// Aufgabe 6 offen
 		
