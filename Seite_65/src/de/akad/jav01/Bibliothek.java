@@ -26,7 +26,7 @@ public class Bibliothek {
 			if (b.getTitel().equals(titel)) return b.istbuchAusgeliehen();
 		}
 		
-		throw new Exception("Das Buch mit dem Titel: " + titel + " ist nicht vorhanden");
+		throw new Exception("nicht vorhanden");
 		
 	}
 	

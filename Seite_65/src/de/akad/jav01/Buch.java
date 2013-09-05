@@ -11,7 +11,7 @@ public class Buch {
 	
 	public void buchAusleihen() throws Exception {
 		
-		if (this.istbuchAusgeliehen() == 1) throw new Exception(this.getTitel() + " ist schon ausgeliehen");
+		if (this.istbuchAusgeliehen() == 1) throw new Exception("bereits ausgeliehen");
 		else this.istAusgeliehen = 1;
 		
 	}
