@@ -93,11 +93,7 @@ public class Datum {
 	}
 	
 	public String toString() {
-		
-		String str = new String();
-		str = this.tag + "." + this.monat + "." + this.jahr;
-		return str;
-		
+		return this.tag + "." + this.monat + "." + this.jahr;
 	}
 	
 	public void datumUmwandeln(int tag, int monat) {

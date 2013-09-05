@@ -26,7 +26,7 @@ public class Main {
 		System.out.println("getAnzahlTageProMonat(): " + date.getAnzahlTageProMonat());
 		System.out.println("istSchaltjahr(): " + date.istSchaltjahr());
 		System.out.println("getNaechstenMonat(): " + date.getNaechstenMonat());
-		System.out.println("getNaechstenTag().toString(): " + date.getNaechstenTag().toString());
+		System.out.println("getNaechstenTag().toString(): " + date.getNaechstenTag()); //toString() wird direkt aufgerufen.
 
 		date.datumUmwandeln(tag, monat);
 		
