@@ -8,6 +8,8 @@ public class Bibliothek {
 	private static Bibliothek bib = null;
 	private List<Buch> buecher = new ArrayList<Buch>();
 	
+	private Bibliothek() {}
+	
 	public static Bibliothek getInstance() {
 		if (bib == null)
 			bib = new Bibliothek();
