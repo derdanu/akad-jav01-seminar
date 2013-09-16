@@ -6,29 +6,26 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		String zahl1 = "110";
-		String zahl2 = "111";
 		
-		Binaerzahl bin1 = new Binaerzahl(zahl1);
+		Binaerzahl bin1 = new Binaerzahl("110");
 		
-		System.out.println("Zahl_1 binaer: " + zahl1);
-		System.out.println("Zahl_1 dezimal: " + Integer.parseInt(zahl1, 2));
+		System.out.println("Zahl_1 binaer: " + bin1);
+		System.out.println("Zahl_1 dezimal: " + bin1.getZahl());
 				
-		Binaerzahl bin2 = new Binaerzahl(zahl2);
+		Binaerzahl bin2 = new Binaerzahl("111");
 		
-		System.out.println("Zahl_2 binaer: " + zahl2);
-		System.out.println("Zahl_2 dezimal: " + Integer.parseInt(zahl2, 2));
+		System.out.println("Zahl_2 binaer: " + bin2);
+		System.out.println("Zahl_2 dezimal: " + bin2.getZahl());
 		
 		Binaerzahl summe = bin1.addiere(bin2);
 		
-		System.out.println("Summe binaer: " + summe.getZahl());
-		System.out.println("Summe dezimal: " + Integer.parseInt(summe.getZahl(), 2));
+		System.out.println("Summe binaer: " + summe);
+		System.out.println("Summe dezimal: " + summe.getZahl());
 
 		Binaerzahl produkt = bin1.multipliziere(bin2);
 		
-		System.out.println("Produkt binaer: " + produkt.getZahl());
-		System.out.println("Produkt dezimal: " + Integer.parseInt(produkt.getZahl(), 2));
+		System.out.println("Produkt binaer: " + produkt);
+		System.out.println("Produkt dezimal: " + produkt.getZahl());
 		
 		
 		

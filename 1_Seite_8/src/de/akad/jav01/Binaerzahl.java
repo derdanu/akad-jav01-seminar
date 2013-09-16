@@ -13,7 +13,7 @@ public class Binaerzahl {
 	public Binaerzahl addiere(Binaerzahl b) {
 		
 		int x = Integer.parseInt(this.string, 2);
-		int y = Integer.parseInt(b.getZahl(), 2); 
+		int y = Integer.parseInt(b.toString(), 2); 
 		
 		int z = x + y;
 		
@@ -24,7 +24,7 @@ public class Binaerzahl {
 	public Binaerzahl multipliziere(Binaerzahl b) {
 		
 		int x = Integer.parseInt(this.string, 2);
-		int y = Integer.parseInt(b.getZahl(), 2); 
+		int y = Integer.parseInt(b.toString(), 2); 
 		
 		int z = x * y;
 		
@@ -40,7 +40,7 @@ public class Binaerzahl {
 	
 	public String getZahl() {
 		
-		return this.string;
+		return String.valueOf(Integer.parseInt(this.string, 2));
 		
 	}
 }
