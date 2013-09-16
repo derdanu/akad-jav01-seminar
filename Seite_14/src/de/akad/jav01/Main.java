@@ -14,21 +14,15 @@ public class Main {
 		System.out.println("--> Aufgabe 1");
 		
 		int[] array = {1, 2, 3, 4, 5};
-		int max=0,min=0;
-		boolean firstrun = true;
+		
+		int max = array[0];
+		int min = array[0];
 		
 		for (int i: array) {
 
-			if (firstrun) {
-				max = i;
-				min = i;
-				firstrun = false;
-			}
-		
 			if (i>max) max = i;
 			if (i<min) min = i;
-			
-						
+	
 		}
 		
 		System.out.println("Der kleinste: " + min);
