@@ -13,7 +13,7 @@ public class Main {
 		
 		Erstkunde k1 = new Erstkunde();
 		k1.setName("Kunde 1");
-		Großkunde k2 = new Großkunde();
+		Grosskunde k2 = new Grosskunde();
 		k2.setName("Kunde 2");
 		Kleinkunde kk = new Kleinkunde();
 		kk.setName("Max Mustermann");
