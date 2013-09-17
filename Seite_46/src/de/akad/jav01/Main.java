@@ -18,7 +18,7 @@ public class Main {
 		p1.setBeschreibung("Beschreibung als String");
 		
 		p2.setName("Pflanze 2");
-		p2.setBeschreibung(new Beschreibung("Die Kornblume gehört zur Pflanzenart Korbblütler", "wenig gießen"));
+		p2.setBeschreibung(new Beschreibung("Die Kornblume gehoert zur Pflanzenart Korbbluetler", "wenig giessen"));
 		
 	
 		System.out.println("Name: " + p1.getName() + "; Beschreibung: " + p1.getBeschreibung());
