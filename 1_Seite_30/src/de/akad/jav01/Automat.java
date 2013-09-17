@@ -1,6 +1,8 @@
 package de.akad.jav01;
 
-import java.util.*; 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Automat {
 	
