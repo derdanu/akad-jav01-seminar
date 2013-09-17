@@ -44,5 +44,14 @@ public enum Produktpreis {
 		return preis;
 		
 	}
+	
+	public static void alleAnzeigen() {
+		
+		for (Produktpreis p: Produktpreis.values()) {
+			
+			System.out.println(p);
+			
+		}
+	}
 
 }
