@@ -1,7 +1,6 @@
 package de.akad.jav01;
 
-import java.util.*;
-import java.util.Iterator.*; 
+import java.util.*; 
 
 public class Automat {
 	
@@ -37,11 +36,11 @@ public class Automat {
 		return alleKonten.size() + " Konten verfuegbar";
 	}
 	
-	public void abheben(int kontonummer, int betrag) {
+	public void abheben(int kontonummer, int betrag) throws MyException {
 		getAccount(kontonummer).abheben(betrag);
 	}
 	
-	public void einzahlen(int kontonummer, int betrag) {
+	public void einzahlen(int kontonummer, int betrag) throws MyException {
 		getAccount(kontonummer).einzahlen(betrag);
 	}
 	

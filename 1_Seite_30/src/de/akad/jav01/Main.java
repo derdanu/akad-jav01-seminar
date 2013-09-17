@@ -6,7 +6,6 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		Account a1 = new Account();
 		a1.setKtoNummer(1);
@@ -19,8 +18,19 @@ public class Main {
 		auto.kontoEinfuegen(a2);
 		auto.kontoEinfuegen(3, "Konto 3");
 
-		auto.einzahlen(1, 100);
-		System.out.println(auto.kontoAbfragen(1));
+		try {
+			auto.einzahlen(1, 100);
+		} catch (Exception e) {
+			System.out.println("Fehler: " + e.getMessage());
+		}
+		
+		System.out.println("Kontostand: " + auto.kontoAbfragen(1));
+
+		try {
+			auto.abheben(1, 300);
+		} catch (Exception e) {
+			System.out.println("Fehler: " + e.getMessage());
+		}
 		
 		auto.kontoLoeschen(2);
 		

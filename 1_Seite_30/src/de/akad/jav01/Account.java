@@ -39,11 +39,13 @@ public class Account {
 		return this.guthaben;
 	}
 	
-	public void abheben ( int betrag ) {
+	public void abheben ( int betrag ) throws MyException {
+		if (betrag > this.guthaben) throw new MyException("zu wenig Geld auf dem Konto");
 		this.guthaben = this.guthaben - betrag; 
 	}
 	
-	public void einzahlen ( int betrag ) {
+	public void einzahlen ( int betrag ) throws MyException {
+		if (betrag <= 0) throw new MyException("mehr als 0 einzahlen");
 		this.guthaben = this.guthaben + betrag; 
 	}
 	
