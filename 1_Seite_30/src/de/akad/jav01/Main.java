@@ -18,25 +18,31 @@ public class Main {
 		auto.kontoEinfuegen(a2);
 		auto.kontoEinfuegen(3, "Konto 3");
 
-		try {
-			auto.einzahlen(1, 100);
-		} catch (Exception e) {
-			System.out.println("Fehler: " + e.getMessage());
-		}
+		auto.einzahlen(1, 100);
+		auto.einzahlen(3, 300);
+		auto.einzahlen(2, 200);
+		auto.einzahlen(1, 400);
+
 		
 		System.out.println("Kontostand: " + auto.kontoAbfragen(1));
 
-		try {
-			auto.abheben(1, 300);
-		} catch (Exception e) {
-			System.out.println("Fehler: " + e.getMessage());
-		}
+		auto.abheben(1, 100);
 		
 		auto.kontoLoeschen(2);
 		
 		System.out.println(auto.toString());
 
 		
+		Account max = null;
+		int maxGeld = 0;
+		for (Account a: auto) {
+			if (maxGeld < a.getGuthaben()) {
+				maxGeld = a.getGuthaben();
+				max = a;
+			}
+		}
+		
+		System.out.println(max);
 	}
 	
 

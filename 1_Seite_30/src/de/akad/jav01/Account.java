@@ -8,7 +8,9 @@ public class Account {
 	// Konstruktoren
 	public Account ( ){ }
 	public Account ( int ktoNummer, String name ) {
-		this.ktoNummer = ktoNummer; this.name = name; this.guthaben = 1;
+		this.ktoNummer = ktoNummer; 
+		this.name = name; 
+		this.guthaben = 0;
 	}
 	// weitere Methoden
 	boolean kontoGleich ( int nr ) {
@@ -50,6 +52,6 @@ public class Account {
 	}
 	
 	public String toString ( ) {
-		return this.ktoNummer + " Name: " + this.name + " Guthaben: " + this.guthaben ;
+		return "Kontonummer: " + this.ktoNummer + " Name: " + this.name + " Guthaben: " + this.guthaben ;
 	} 
 }

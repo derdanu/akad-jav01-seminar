@@ -1,10 +1,11 @@
 package de.akad.jav01;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 
-public class Automat {
+public class Automat implements Iterable<Account>{
 	
 	List<Account> alleKonten = new ArrayList<Account>();
 	
@@ -38,12 +39,22 @@ public class Automat {
 		return alleKonten.size() + " Konten verfuegbar";
 	}
 	
-	public void abheben(int kontonummer, int betrag) throws MyException {
-		getAccount(kontonummer).abheben(betrag);
+	public void abheben(int kontonummer, int betrag) {
+		try {
+			getAccount(kontonummer).abheben(betrag);
+		} catch (MyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
-	public void einzahlen(int kontonummer, int betrag) throws MyException {
-		getAccount(kontonummer).einzahlen(betrag);
+	public void einzahlen(int kontonummer, int betrag) {
+		try {
+			getAccount(kontonummer).einzahlen(betrag);
+		} catch (MyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	private Account getAccount(int ktoNummer) {
@@ -54,6 +65,11 @@ public class Automat {
 		
 		return null;
 		
+	}
+
+	@Override
+	public Iterator<Account> iterator() {
+		return this.alleKonten.iterator();
 	}
 
 }
