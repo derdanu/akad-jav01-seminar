@@ -3,13 +3,15 @@ package de.akad.jav01;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class View extends JFrame implements ActionListener {
+public class View extends JFrame implements WindowListener, ActionListener {
 
 	private GridLayout gl = new GridLayout();
 	private JLabel l1 = new JLabel("Alter Name");
@@ -27,6 +29,7 @@ public class View extends JFrame implements ActionListener {
 		
 		setLayout(gl);
 		setTitle("Personenregister");
+		this.addWindowListener(this);
 		
 		add(l1);
 		add(tf1);
@@ -49,5 +52,30 @@ public class View extends JFrame implements ActionListener {
 		}
 		
 	}
+
+	@Override
+	public void windowActivated(WindowEvent arg0) { }
+
+	@Override
+	public void windowClosed(WindowEvent arg0) { }
+
+	@Override
+	public void windowClosing(WindowEvent arg0) {
+		this.setVisible(false);
+		dispose();
+		System.exit(0);		
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent arg0) { }
+
+	@Override
+	public void windowDeiconified(WindowEvent arg0) { }
+
+	@Override
+	public void windowIconified(WindowEvent arg0) { }
+
+	@Override
+	public void windowOpened(WindowEvent arg0) { }
 
 }
