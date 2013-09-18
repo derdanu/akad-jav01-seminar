@@ -34,7 +34,8 @@ public class Main {
 		// und zurŸck
 		System.out.println(Integer.parseInt("7", 10));
 		
-		//printTrenner();
+		printTrenner();
+		
 		
 				
 	}	
