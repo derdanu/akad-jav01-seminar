@@ -16,7 +16,7 @@ public class View extends JFrame implements ActionListener {
 	private JLabel l2 = new JLabel("Neuer Name");
 	private JTextField tf1 = new JTextField();
 	private JTextField tf2 = new JTextField();
-	private JButton b = new JButton("Ändern");
+	private JButton b = new JButton("aendern");
 	
 	public View() {
 		
