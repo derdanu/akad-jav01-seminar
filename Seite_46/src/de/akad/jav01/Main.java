@@ -42,10 +42,10 @@ public class Main {
 		pfl2[1] = p4;
 		
 		
-				
-		for (Pflanze<Beschreibung> p : pfl2) {
+					
+		for (int i=0; i < pfl2.length; i++) {
 			
-			System.out.println("Name: " + p.getName() + "; Beschreibung: " + p.getBeschreibung().toString());
+			System.out.println("Name: " + pfl2[i].getName() + "; Beschreibung: " + pfl2[i].getBeschreibung().toString());
 			
 		}		
 		
