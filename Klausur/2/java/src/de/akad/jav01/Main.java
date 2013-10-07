@@ -21,7 +21,8 @@ public class Main {
 		per.addObserver(ov);
 		
 		p.aendereNamen("Daniel", "Sepp");
-			
+		
+		per.deleteObservers();
 		
 	}
 
