@@ -45,6 +45,11 @@ public class Main {
 		}
 		
 		
+		Farbe f1 = Farbe.Gold;
+		Farbe f2 = Farbe.Rot;
+
+		System.out.println(f1);
+		
 		
 	}
 	
